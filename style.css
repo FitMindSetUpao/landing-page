@@ -1,0 +1,175 @@
+
+/* Navbar personalizado */
+.custom-navbar {
+  padding: 0.0rem 0.1rem;
+}
+/* Tamaño del logo */
+.logo-img {
+  height: 120px;
+  width: 120px;
+  margin-right: 8px; /* Espacio entre el logo y el texto */
+  vertical-align: middle;
+}
+.custom-navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color:black !important;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
+.navbar-brand:hover {
+  color:black !important;
+}
+.custom-navbar .navbar-nav .nav-link {
+  font-size: 1rem;
+  color: #050505;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-navbar .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #080808;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+
+.custom-navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+/* Estilo de transición suave */
+.custom-navbar .nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #f8f9fa;
+  transform: scale(1.05);
+}
+
+/* Para dispositivos pequeños */
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+.hero-section {
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  color: #333; /* Color del texto */
+}
+
+.hero-section p {
+  color: #555; /* Color secundario para el texto */
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+}
+.btn-saber-mas{
+  padding:7px 14px;
+  background-color: #b3b3b3;
+  border-radius: 20px;
+  text-decoration: none;
+  color:black;
+  font-size: 14px;
+  font-family: "Poppins",sans-serif;
+}
+.btn-saber-mas:hover{
+  color:#050505;
+  background-color: #9ef104;
+}
+.lead{
+  font-family: 'Open Sans', sans-serif;
+}
+.team-member {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member .info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: left;
+  font-family: "Poppins",sans-serif;
+}
+
+.team-member:hover .info {
+  display: block;
+}
+.title{
+  font-family: "Poppins",sans-serif;
+}
+ footer {
+    font-family: 'Poppins', sans-serif; /* Fuente Poppins para el footer */
+  }
+
+  .footer-title {
+    font-weight: 600; /* Peso de fuente más destacado para los títulos */
+    color: #1e69de; /* Color de los títulos de sección */
+    margin-bottom: 15px; /* Espacio inferior entre el título y el contenido */
+  }
+
+  .social-icons a {
+    font-size: 1.5rem; /* Tamaño de los íconos sociales */
+    transition: transform 0.3s; /* Efecto de transición para el hover */
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el cursor */
+    color: #1e69de; /* Color al hacer hover */
+  }
+
+  .footer-links li a {
+    color: #cccccc; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Efecto de transición para el color */
+    font-weight: 400; /* Peso de fuente normal */
+  }
+
+  .footer-links li a:hover {
+    color: #1e69de; /* Color al hacer hover sobre los enlaces */
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px; /* Espaciado en dispositivos más pequeños */
+    }
+  }
